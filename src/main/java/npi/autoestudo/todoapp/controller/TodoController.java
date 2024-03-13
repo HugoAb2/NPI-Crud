@@ -18,7 +18,7 @@ import npi.autoestudo.todoapp.service.TodoService;
 @RequestMapping("/todos")
 public class TodoController {
 
-    private TodoService todoService;
+    private final TodoService todoService;
 
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
